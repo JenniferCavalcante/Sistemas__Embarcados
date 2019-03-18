@@ -16,15 +16,20 @@ entrada.
 Em geral, shells dos sistemas operacionais usam uma interface de linha de comando ou uma interface gráfica de usuário,
 dependendo da função e operação particular de um computador.
 
-
 4. Por que é importante evitar executar o terminal como super-usuário?
+Porque ele pode alterar a configuração do sistema, configurar interfaces de rede, manipular usuários e grupos, 
+alterar a prioridades de processos, entre outros.  Por isso, ele só deve ser usado em situações que não podem 
+ser trabalhadas por usuários que não possuem privilégios de super usuário.
 
 5. Qual botão do teclado completa o que o usuário escreve no terminal, de acordo com o contexto?
+TAB
 
 6. Quais botões do teclado apresentam instruções escritas anteriormente?
+seta para cima
 
 7. Apresente os respectivos comandos no terminal para:
   (a) Obter mais informações sobre um comando.
+  
   (b) Apresentar uma lista com os arquivos dentro de uma pasta.
   (c) Apresentar o caminho completo da pasta.
   (d) Trocar de pasta.
