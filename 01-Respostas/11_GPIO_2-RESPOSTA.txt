@@ -1,0 +1,20 @@
+1-Defina qual modelo de Raspberry Pi você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.
+
+2-Defina qual sistema operacional você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.
+
+3-Defina de qual forma você instalará o sistema operacional escolhido. Escreva o passo-a-passo da instalação e forneça os links necessários para isto.
+
+4-Defina de qual forma você desenvolverá software para o Raspberry Pi no projeto desta disciplina. Escreva o passo-a-passo do desenvolvimento 
+e forneça os links necessários para isto.
+
+==================================================================================================
+RESPOSTAS:
+
+1) O modelo que estou utilizando é o modelo 3 B, o mesmo não foi escolhido por nenhuma característica espcial e sim por ser o ultimo lançamento.
+
+2) O sistemas escolhido foi o Raspbian por possuir bastante matérial sobre diversos projetos utilizando o mesmo SO.
+
+3)Basicamente segui as instruções disponíveis nesse vídeo <https://robozera.com/2017/01/03/iniciando-raspberry-pi/>.
+Muito didático e fácil de acompanhar.
+
+4) Fiz uso da comunicação remota usando VNC, seguindo esse tutorial <http://www.faciltech.info/index.php/videos/raspberry-pi/61-acessando-o-raspberry-remotamente-pelo-tablet-ou-pc-vnc>

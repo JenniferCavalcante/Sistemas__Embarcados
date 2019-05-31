@@ -1,0 +1,32 @@
+11_GPIO_1 - RESPOSTA
+
+
+1- Apresente 5 sistemas operacionais suportados pelo Raspberry Pi, e algumas de suas características.
+
+2-Apresente as formas de instalação de sistemas operacionais para o Raspberry Pi.
+
+3-Apresente 3 formas de desenvolvimento de software para o Raspberry Pi.
+
+4-Apresente 3 formas de acesso remoto ao Raspberry Pi.
+
+5-Apresente as formas possíveis de compilação de código em C para o Raspberry Pi.
+
+6-Apresente as formas possíveis de compilação de código em Python para o Raspberry Pi.
+
+================================================================================
+RESPOSTAS:
+
+1)
+-Ubunto MATE
+- Raspbian 4.9 com interface gráfica
+-Ubunto Core
+-Windows 10
+-OSMC
+
+2)Através do gerenciador chamado NOOBS que aparece assim a placa estiver conectada tendo memória através de um cartão SD.
+
+3)Após ter "feito" o programa, o mesmo pode ser transferido para a rasp e ser excutado na mesma.
+
+4) Através do VNC view, que captura a tela da rasp e mostra a mesma em um computador que esteja conectado a mesma rede e que tenha permissão
+de acesso.
+Através do cabo ethernet e fazer conexão direta, através de uma rede local entre a rasp e o pc.

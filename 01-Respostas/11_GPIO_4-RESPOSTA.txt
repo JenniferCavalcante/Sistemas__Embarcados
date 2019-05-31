@@ -1,0 +1,60 @@
+11_GPIO_4-RESPOSTA
+
+1-Escreva um código em C para gerar uma onda quadrada de 1 Hz em um pino GPIO do Raspberry Pi.
+
+2-Generalize o código acima para qualquer frequência possível.
+
+3-Crie dois processos, e faça com que o processo-filho gere uma onda quadrada, enquanto o processo-pai lê um botão no GPIO, 
+aumentando a frequência da onda sempre que o botão for pressionado. A frequência da onda quadrada deve começar em 1 Hz, e 
+dobrar cada vez que o botão for pressionado. A frequência máxima é de 64 Hz, devendo retornar a 1 Hz se o botão for pressionado novamente.
+
+================================================================================================
+RESPOSTA
+1)
+#Define Libraries
+import RPi.GPIO as gpio
+import time
+ 
+#Configuring don’t show warnings 
+gpio.setwarnings(False)
+ 
+#Configuring GPIO
+pio.setmode(gpio.BOARD)
+gpio.setup(38,gpio.OUT)
+gpio.setup(40,gpio.OUT)
+ 
+#Configure the pwm objects and initialize its value
+pwmBlue = gpio.PWM(38,1000)
+pwmBlue.start(0)
+ 
+pwmRed = gpio.PWM(40,1000)
+pwmRed.start(100)
+ 
+#Create the dutycycle variables
+dcBlue = 0
+dcRed  = 100
+ 
+#Loop infinite
+while True:
+   
+    #increment gradually the luminosity
+    pwmBlue.ChangeDutyCycle(dcBlue)
+    time.sleep(0.05)
+    dcBlue = dcBlue + 1
+    if dcBlue == 100:
+        dcBlue = 0
+ 
+    #decrement gradually the luminosity
+    pwmRed.ChangeDutyCycle(dcRed)
+    time.sleep(0.05)
+    dcRed = dcRed - 1
+    if dcRed == 0:
+        dcRed = 100
+    
+#End code
+gpio.cleanup()
+exit()
+
+2)
+
+3)
